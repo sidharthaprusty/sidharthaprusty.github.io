@@ -98,7 +98,7 @@ author URL: http://sidharthaprusty.github.io
 						For over past 3 years, I have worked my way through this industry creating some of the really great web apps fulfilling the customers' needs. And, I can make this happen for your business as well.</p>
 					<ul data-aos="slide-up">
 						<li><a href="#" class="sidls_more" data-toggle="modal" data-target="#myModal">Know More</a></li>
-						<li><a href="#" class="scroll sidl_contact"><i class="fa fa-download" aria-hidden="true"></i> Download CV</a></li>
+						<li><a href="contents/Resume Web.pdf" download target="blank" class="sidl_contact"><i class="fa fa-download" aria-hidden="true"></i> Download CV</a></li>
 					</ul>
 				</div>
 			</div>
@@ -514,9 +514,9 @@ author URL: http://sidharthaprusty.github.io
 				Subject : "Email:"+ $('#emailFrom').val() +" From Company: " + $('#company').val() + "Phone No.- " +$('#phone').val(),
 				Body : $('#messageBody').val(),
 			}).then(function(response){
-				debugger;
 				if(response == 'OK'){
-					alert("Your message has bees sent successfully!")
+					alert("Your message has bees sent successfully!");
+					$('#contactForm')[0].reset() ;
 				}else{
 					alert("Error occurred.");
 				}
